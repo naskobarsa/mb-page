@@ -1,0 +1,145 @@
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #42f01f;
+    border-radius: 4px;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(255,255,255,.15);
+    border: 1px solid #f7ffec;
+}
+
+.navbar-collapse {
+     -webkit-box-shadow: none;
+     box-shadow: none;
+    border-top: none;
+}
+
+.row {
+    width: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+    header ul li,
+    ul.vertical-lines li {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    header ul li:nth-child(n+2):nth-child(-n+7) ,
+    ul.vertical-lines li:nth-child(n+2):nth-child(-n+7) {
+        display: none;
+    }
+
+    header div.heading {
+        width: 80vw;
+        padding-left: 100px;
+    }
+
+    main section.contact-us div.form-and-info .info {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        text-align: right;
+        margin-top: 200px;
+        justify-content: space-evenly;
+    }
+
+    main section.contact-us form button {
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    main section.services .services-list ul li {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    main section.about .heading-bg .heading h3 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header div.heading {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header div.heading p {
+        padding-right: 0;
+
+    }
+
+    header ul li:nth-child(1) ,
+    ul.vertical-lines li:nth-child(1) {
+        display: none;
+    }
+
+    header ul li, ul.vertical-lines li {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        height: max-content;
+        opacity: 1.0 !important;
+        vertical-align: top;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.102);
+
+    }
+
+    header ul li a {
+        margin: 20px auto auto auto;
+        padding: 3px auto !important;
+    }
+
+    header ul li:last-child, ul.vertical-lines li:last-child {
+        margin-right: auto;
+    }
+
+    main section.services .services-list ul li {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+
+    main section.services .services-list ul li img {
+        position: relative;
+        top: 0;
+    }
+
+    main section.services .services-list ul li h3,
+    main section.services .services-list ul li p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    button.navbar-toggle {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+   .navbar-header {
+        text-align: center;
+    }
+    main section.contact-us form input,
+    main section.contact-us form textarea,
+    main section.contact-us form button {
+        width: 100%;
+    }
+}
