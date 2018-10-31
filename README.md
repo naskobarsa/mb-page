@@ -1,1 +1,1 @@
-# mb-page
+# mb-page - responsive 
